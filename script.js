@@ -1,4 +1,4 @@
-const QUOTES_API = "https://attackontitanquotes.vercel.app/";
+const QUOTES_API = "https://aot-api.vercel.app/quote/";
 
 const getQuoteBtn = document.getElementById("getQuote");
 const usernameInput = document.getElementById("username");
