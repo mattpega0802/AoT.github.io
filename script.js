@@ -1,4 +1,4 @@
-const QUOTES_API = "https://aot-api.vercel.app/quote/";
+const QUOTES_API = "https://aot-api.vercel.app/quote";
 
 const getQuoteBtn = document.getElementById("getQuote");
 const usernameInput = document.getElementById("username");
@@ -24,8 +24,8 @@ getQuoteBtn.addEventListener("click", async () => {
     if (!response.ok) throw new Error("Failed to fetch quote.");
     const data = await response.json();
 
-    const quote = data.quote;
-    const character = data.character;
+    const quote = data.quote || "No quote found.";
+    const author = data.author || "Unknown";
 
     const reader = new FileReader();
     reader.onload = () => {
@@ -36,7 +36,7 @@ getQuoteBtn.addEventListener("click", async () => {
           <img src="${photoURL}" alt="Uploaded Photo" />
           <h2>${username}</h2>
           <p class="quote">"${quote}"</p>
-          <p class="author">— ${character}</p>
+          <p class="author">— ${author}</p>
         </div>
       `;
     };
