@@ -70,3 +70,27 @@ button:hover {
   font-size: 18px;
   font-style: italic;
 }
+
+.result-card {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px #000;
+}
+
+.result-card h2 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.result-card .quote {
+  font-style: italic;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.result-card .author {
+  font-size: 16px;
+  color: #ccc;
+}
