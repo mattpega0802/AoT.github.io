@@ -1,3 +1,5 @@
+
+//WHY DO YOU HAVE SCRIPT.JS IF THE CODE IS ALMOST IDENTICAL TO WHAT'S ALREADY IN INDEX.HTML FILE AND EVERYTHING WORKS FINE EVEN WITHOUT IT?
 const QUOTES_API = "https://aot-api.vercel.app/quote";
 
 const getQuoteBtn = document.getElementById("getQuote");
