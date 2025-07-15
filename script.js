@@ -1,3 +1,4 @@
+//ALL IN ALL ITS WORKING FINE, BUT THE IMAGE REQUIREMENT IS QUESTIONABLE WHEN ITS MAIN PURPOSE IS TO JUST GENRATE RANDOM QOUTES.
 const QUOTES_API = "https://aot-api.vercel.app/quote";
 
 const getQuoteBtn = document.getElementById("getQuote");
